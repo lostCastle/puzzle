@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>购物车</title>
+<script src="js/jquery-1.9.0.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/shopcar.js"></script>
+
+
+</head>
+
+<body style="background:#FFF">
+<!--头部开始-->
+<div class="header">
+	<div style="width:100%; background:#eeeeee; ">
+	<div class="header_first">
+    	<span><a href="index.html" class="jianju"> <img src="images/ico_home.png">首页</a></span>
+        <span class="fl_right "><a href="login.html">登陆</a>  |  <a href="signUp.html">注册</a><a href="personCenter.html" class="jianju">会员中心</a> <a href="orderManage.html" class="jianju">我的订单</a><a href="help.html" class="jianju">帮助中心</a></span>
+    </div>
+    </div>
+    <div class="header_second">
+    	<div class="logo"><img src="images/logo.png" /></div> 
+        <div class="search_box">
+        	<input type="text" name="search" />
+            <input name="搜索" type="button" value="&nbsp;" />
+            <div class="search_text"><a href="#">办公桌</a> <a href="#">笔记本</a> <a href="#">代购</a> <a href="#">代销</a></div>
+        </div>
+        <div class="car_box"><img src="images/car.png" /> 我的购物车 <span>(0)</span></div>
+    </div>
+</div>
+<!--头部结束-->
+<div class="xian"></div>
+<!--购物车开始-->
+<div class="shopCar" style="border:none;">
+	<div class="shopCar_top"></div>
+    <div class="shopCar_content">
+    	<h3>全部商品</h3>
+<div class="catbox">
+  <table id="cartTable">
+    <thead>
+      <tr style="border:none; height:30px;">
+        <th><label><input class="check-all check th1" type="checkbox"/><span class="th2">全选</span></label></th>
+        <th class="th3">商品信息</th>
+        <th class="th4">单价</th>
+        <th class="th5">数量</th>
+        <th class="th6">小计</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/shopCar_item.jpg" alt=""/><span>ONLY含羊毛宽松厚实中长毛呢大衣女T|11536T005</span><p>来自英国设计师richard c. evans的创意产品，<br>设计师为当地的家具商bentply设计了这...</p></td>
+        <td class="price">49.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">49.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/shopCar_item.jpg" alt=""/><span>ONLY含羊毛宽松厚实中长毛呢大衣女T|11536T005</span><p>来自英国设计师richard c. evans的创意产品，<br>设计师为当地的家具商bentply设计了这...</p></td>
+        <td class="price">49.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">49.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/shopCar_item.jpg" alt=""/><span>ONLY含羊毛宽松厚实中长毛呢大衣女T|11536T005</span><p>来自英国设计师richard c. evans的创意产品，<br>设计师为当地的家具商bentply设计了这...</p></td>
+        <td class="price">49.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">49.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+      <tr>
+        <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+        <td class="goods"><img src="images/shopCar_item.jpg" alt=""/><span>ONLY含羊毛宽松厚实中长毛呢大衣女T|11536T005</span><p>来自英国设计师richard c. evans的创意产品，<br>设计师为当地的家具商bentply设计了这...</p></td>
+        <td class="price">49.00</td>
+        <td class="count"><span class="reduce"></span>
+          <input class="count-input" type="text" value="1"/>
+          <span class="add">+</span></td>
+        <td class="subtotal">49.00</td>
+        <td class="operation"><span class="delete">删除</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="foot" id="foot">
+    <label class="fl select-all"><input type="checkbox" class="check-all check " style="margin-left:5px;"/>&nbsp;全选</label>
+    <p style="float:left; margin-top:15px; width:125px; text-align:center">继续购物</p>
+    <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+    <a href="checkOrder.html"><div class="fr closing" onclick="getTotal();">结 算</div></a>
+    <input type="hidden" id="cartTotalPrice" />
+    <div class="fr total">合计（不含运费）：￥<span id="priceTotal">0.00</span></div>
+    <div class="fr selected" id="selected">已选择商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+    <div class="selected-view">
+      <div id="selectedViewList" class="clearfix">
+        <div><img src="images/shopCar_item.jpg"><span>取消选择</span></div>
+      </div>
+      <span class="arrow">◆<span>◆</span></span> </div>
+  </div>
+</div>
+</div>
+</div>
+<!--购物车结束-->
+<!--底部开始-->
+<div class="footer">
+	<div class="main">
+    	<div class="ft_logo">
+        	<img src="images/f_logo.png"/>
+        </div>
+   
+     <div class="ft_center">
+            	<ul>
+                	<li>
+                    	<a href="#"><h1>使用指南</h1></a>
+                        <a href="#"><p>流程说明</p></a>
+                        <a href="#"><p>支付方式</p></a>
+                        <a href="#"><p>注册登录</p></a>
+                    </li>
+                    <li>
+                    	<a href="#"><h1>售后服务</h1></a>
+                        <a href="#"><p>售后政策</p></a>
+                        <a href="#"><p>退换货原则</p></a>
+                        <a href="#"><p>售后流程</p></a>
+                    </li>
+                    <li>
+                    	<a href="#"><h1>联系我们</h1></a>
+                        <a href="#"><p>免责条款</p></a>
+                        <a href="#"><p>关于我们</p></a>
+                        <a href="#"><p>联系我们</p></a>
+                    </li>
+                </ul>
+            </div>
+    <div class="ft_right"><a href="#"><img src="images/erweima.png" /></a></div>
+     </div>
+    <div class="bottom">©2010-2015 www.XXX.com 福州广为网络科技有限公司版权所有 闽ICP备 09051658号  技术支持：广为网络</div>
+</div>
+<!--底部结束-->
+<script type="text/javascript">
+	addressInit('cmbProvince', 'cmbCity', 'cmbArea', '陕西', '宝鸡市', '金台区');
+	addressInit('Select1', 'Select2', 'Select3');
+	
+</script>
+
+
+</body>
+
+
+</html>

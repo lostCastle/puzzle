@@ -3,138 +3,781 @@
 <head>
 <meta charset="utf-8">
 <title>首页</title>
-
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo"><a href="#">王宇翔</a></div>
-            <ul>                
-                <li><a href="#">链接</a></li>
-                <li><a href="#">链接</a></li>
-                <li><a href="#">链接</a></li>
-                <li id="sidebar_trigger"><a href="#">侧边菜单</a></li>
-            </ul>
-        </nav>
-        <div id="banner">
-            <div class="inner">
-                <h1>王宇翔</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <button id="main-btn">了解我</button>
-                <div class="more">更多</div>
-            </div>
-        </div>        
-    </header>
-    
-    <div class="content">
-        <section class="green">
-            <div class="wrapper">
-                <div>
-                    <h2>一个标题</h2>
-                    <div class="hr"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</p>
-                </div>
-                <div class="icon-group">
-                    <span class="icon">item</span>
-                    <span class="icon">item</span>
-                    <span class="icon">item</span>
-                </div>
-            </div>
-        </section>
-        <section class="gray">
-            <div class="article">
-                <div class="img">
-                    <img src="images/pic01.jpg" alt=""/>
-                </div>
-                <div class="text">
-                    <h2>又一个标题</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae voluptate expedita earum iusto laboriosam accusamus. Deleniti, dignissimos ipsam. Iste quasi et illum sapiente repellat consequatur minima exercitationem, nemo nesciunt.</p>
-                </div>
-            </div>
-            <div class="article">
-                <div class="text">
-                    <h2>又一个标题</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae voluptate expedita earum iusto laboriosam accusamus. Deleniti, dignissimos ipsam. Iste quasi et illum sapiente repellat consequatur minima exercitationem, nemo nesciunt.</p>
-                </div>
-                                <div class="img">
-                    <img src="images/pic02.jpg" alt=""/>
-                </div>
-            </div>
-            <div class="article">
-                <div class="img">
-                    <img src="images/pic03.jpg" alt=""/>
-                </div>
-                <div class="text">
-                    <h2>又一个标题</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae voluptate expedita earum iusto laboriosam accusamus. Deleniti, dignissimos ipsam. Iste quasi et illum sapiente repellat consequatur minima exercitationem, nemo nesciunt.</p>
-                </div>
-            </div>
-        </section>
-        <section class="purple">
-            <div class="wrapper">
-            <div class="heading-wrapper">
-                <h2>又一个标题</h2>
-                                <div class="hr"></div>
-                <div class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae voluptate expedita earum iusto laboriosam accusamus. Deleniti, dignissimos ipsam. Iste quasi et illum sapiente repellat consequatur minima exercitationem, nemo nesciunt.</div>
-            </div>
-            <div class="card-group clearfix">
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-                <div class="card">
-                    <h3>又一个标题</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            </div>
-        </section>
+<!--头部开始-->
+<div class="header">
+	<div style="width:100%; background:#eeeeee; ">
+	<div class="header_first">
+    	<span><a href="index.html" class="jianju"> <img src="images/ico_home.png">首页</a></span>
+        <span class="fl_right "><a href="login.html">登陆</a>  |  <a href="signUp.html">注册</a><a href="personCenter.html" class="jianju">会员中心</a> <a href="orderManage.html" class="jianju">我的订单</a><a href="help.html" class="jianju">帮助中心</a></span>
     </div>
-    
-    <footer>
-        <ul class="share">
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-        </ul>
-        <div class="copy">
-            &copy; 王宇翔
+    </div>
+    <div class="header_second">
+    	<div class="logo"><img src="images/logo.png" /></div> 
+        <div class="search_box">
+        	<input type="text" name="search" />
+            <input name="搜索" type="button" value="&nbsp;" />
+            <div class="search_text"><a href="#">办公桌</a> <a href="#">笔记本</a> <a href="#">代购</a> <a href="#">代销</a></div>
         </div>
-        
-    </footer>
-    <div class="mask"></div>
-    <div id="sidebar">
-        <ul>
-            <li><a href="">item1</a></li>
-            <li><a href="">item1</a></li>
-            <li><a href="">item1</a></li>
-            <li><a href="">item1</a></li>
-            <li><a href="">item1</a></li>
-        </ul>
+        <a href="shopCar.html"><div class="car_box"><img src="images/car.png" /> 我的购物车 <span>(0)</span></div></a>
     </div>
-    <input type="button" value='返回顶部' class="back-top">
-    <script src="js/jquery-1.9.0.min.js"></script>
-    <script src="js/main.js"></script>
+</div>
+<!--头部结束-->
+<div class="clear"></div>
+<div class="xian"></div>
+<!--banner开始-->
+<div class="banner">
+  <div class="nav">
+  	<div class="kuang"><img src="images/left_menu_title.png" width="216" height="42" alt=""/>
+    <dl class="nav_warp">
+    	<dt><a href="#">美食专区</a>
+        <ul class="ul1">
+        美食专区
+          
+
+        </ul> 
+
+        
+        	<dd><a href="#">坚果</a></dd>
+            <dd><a href="#">燕麦</a></dd>
+            <dd><a href="#">果仁</a></dd>
+            <dd><a href="#">巧克力</a></dd>
+        </dt>    
+    </dl>
+            <dl class="nav_warp">
+    	<dt><a href="#">3C专区</a>
+        <ul class="ul2">
+        3C专区
+
+        </ul>
+        
+        	<dd><a href="#">电脑</a></dd>
+            <dd><a href="#">POS机</a></dd>
+            <dd><a href="#">笔记本</a></dd>
+            <dd><a href="#">电脑</a></dd>
+        </dt>    
+    </dl>
+        <dl class="nav_warp">
+    	<dt><a href="#">服装专区</a>
+        <ul class="ul3">
+          服装专区
+
+        </ul>
+        
+        	<dd><a href="#">女装</a></dd>
+            <dd><a href="#">男装</a></dd>
+            <dd><a href="#">大衣</a></dd>
+            <dd><a href="#">牛仔裤</a></dd>
+        </dt>    
+    </dl>
+        <dl class="nav_warp">
+    	<dt><a href="#">箱包专区</a>
+        <ul class="ul4">
+        
+箱包专区
+        </ul>            	<dd><a href="#">书包</a></dd>
+            <dd><a href="#">行李包</a></dd>
+            <dd><a href="#">背包</a></dd>
+            <dd><a href="#">手提包</a></dd>
+        </dt>    
+    </dl>
+        <dl class="nav_warp">
+    	<dt><a href="#">文玩专区</a>
+        <ul class="ul5">
+     文玩专区
+        </ul>            	
+        	<dd><a href="#">书包</a></dd>
+            <dd><a href="#">行李包</a></dd>
+            <dd><a href="#">背包</a></dd>
+            <dd><a href="#">手提包</a></dd>
+        </dt>    
+    </dl>
+        <dl class="nav_warp">
+    	<dt><a href="#">进口专区</a>
+        <ul class="ul6">
+         进口专区
+        </ul>            	
+        	<dd><a href="#">书包</a></dd>
+            <dd><a href="#">行李包</a></dd>
+            <dd><a href="#">背包</a></dd>
+            <dd><a href="#">手提包</a></dd>
+        </dt>    
+    </dl>
+        <dl class="nav_warp">
+    	<dt><a href="#">自贸专区</a>
+        <ul class="ul7">
+         自贸专区
+        </ul>            	
+        	<dd><a href="#">书包</a></dd>
+            <dd><a href="#">行李包</a></dd>
+            <dd><a href="#">背包</a></dd>
+            <dd><a href="#">手提包</a></dd>
+        </dt>    
+    </dl>
+        </div>
+  </div>
+	        <div class="btn_left"></div>
+            <div class="btn_right"></div>
+        	<ul class="img_ul">
+            	<li style="background:url(images/banner-1.jpg) no-repeat;"></li>
+                <li style="background:url(images/banner-2.jpg) no-repeat;"></li>
+                <li style="background:url(images/banner-3.jpg) no-repeat;"></li>
+            </ul>
+            
+            <ul class="ico_box">
+            	<li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+	
+</div>
+<div class="float_1"><img src="images/float_a.jpg"/></div>
+<div class="float_2"><img src="images/float_b.jpg"/></div>
+<!--banner结束-->
 </body>
+<!--图片轮播开始-->
+    <script>
+	
+		var numImg = $('.img_ul li').length;	
+    	var page = 0;
+		var timer = null;
+		var hoverTime = 0;		
+		$('.lihoqi').mousemove(function(){
+			$(this).addClass('libox');
+		})
+		$(".banner").mousemove(function(){
+			clearInterval(timer);	
+		});
+		
+		$(".banner").mouseout(function(){
+			timer = setInterval(moveimg,3000);
+		});
+		
+		$(".ico_box li").mousemove(function(){
+			var timestamp = new Date().getTime();						
+			if((timestamp - hoverTime)>500){
+				hoverTime = timestamp;
+				var index = $(".ico_box li").index(this);		
+				page = index;
+				changeImg();
+			}
+		});
+		
+		$(".btn_left").click(function(){
+			page--;
+			if(page < 0){
+				page = numImg;	
+			}else if(page > numImg){
+				page = 0;	
+			}
+			changeImg();
+		});
+		$(".btn_right").click(function(){
+			page++;
+			changeImg();
+		});
+		
+		timer = setInterval(moveimg,3000);
+		
+		function moveimg(){
+			page++;
+			changeImg();
+			
+		}
+		
+		function changeImg(){
+			if(page < 0){
+				page = numImg;	
+			}else if(page > numImg){
+				page = 0;	
+			}
+			$(".ico_box li").eq(page).addClass('active').siblings().removeClass('active');
+			$(".img_ul li").eq(page).show(1000).siblings().hide(1000);
+			//$(".img_ul li").eq(page).css("display","block").siblings().css("display","none");
+		}
+    </script>
+<!--图片轮播结束->
+<!--导航菜单开始-->
+    <script>
+	  $(function() {
+        $(".nav_warp").hover(
+            function() {
+              $(this).find("ul").show();
+            },
+            function() {
+              $(this).find("ul").hide();
+            }
+        );
+      });
+	</script>
+<!--导航菜单结束-->
+<!--导航底菜单开始-->
+<div class="box">
+	<ul>
+    	<li><img src="images/img1.jpg"></li>
+        <li>
+        	<div class="tuijian">
+            	<h1>大牌冬靴钜献</h1>
+                <span>特价优惠</span>
+                <div class="jianju"></div>
+                <p>冬靴上新 足够温暖</p><p>这个冬天我想出去走一走</p>
+            </div>
+            <h2>￥49.00</h2>
+            <div class="img"><img src="images/img2.png"></div>
+        </li>
+          <li>
+        	<div class="tuijian">
+            	<h1>大牌冬靴钜献</h1>
+                <span>特价优惠</span>
+                <div class="jianju"></div>
+                <p>冬靴上新 足够温暖</p><p>这个冬天我想出去走一走</p>
+            </div>
+            <h2>￥49.00</h2>
+            <div class="img"><img src="images/img3.png"></div>
+        </li>
+          <li>
+        	<div class="tuijian">
+            	<h1>大牌冬靴钜献</h1>
+                <span>特价优惠</span>
+                <div class="jianju"></div>
+                <p>冬靴上新 足够温暖</p><p>这个冬天我想出去走一走</p>
+            </div>
+            <h2>￥49.00</h2>
+            <div class="img"><img src="images/img4.png"></div>
+        </li>
+        
+        
+    </ul>
+    <div class="shuaxin"><img src="images/shuaxin.png"></div>
+</div>
+<!--导航底菜单结束-->
+<!--楼层开始-->
+<div class="floor">
+	<div class="left">
+    	<div class="left_title" style="border-bottom: 5px solid #0480ff;"><span >1F 美食专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#0480ff">舌尖美味 至尊享受</h1>
+                <p>看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#0480ff;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="floor">
+	<div class="left">
+    	<div class="left_title" style="border-bottom: 5px solid #ce71e5;" ><span>2F 3C专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#9957a9">舌尖美味 至尊享受</h1>
+                <p>看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#9957a9;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="floor">
+	<div class="left">
+    	<div class="left_title" style="border-bottom: 5px solid #e87b8f;"><span>3F 服装专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#e5718a">舌尖美味 至尊享受</h1>
+                <p>看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#e5718a;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="floor">
+	<div class="left">
+    	<div class="left_title"  style="border-bottom: 5px solid #eea67b;"><span>4F 箱包专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#eea67b">舌尖美味 至尊享受</h1>
+                <p>看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#eea67b;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="floor">
+	<div class="left">
+    	<div class="left_title"  style="border-bottom: 5px solid #75cf71;"><span>5F 文玩专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#75cf71">舌尖美味 至尊享受</h1>
+                <p>看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#75cf71;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="floor">
+	<div class="left">
+    	<div class="left_title"  style="border-bottom: 5px solid #e3e266;"><span>6F 进口专区</span></div>
+        <ul class="list_ul">
+        	<li><a href="#">饼干糕点</a></li>
+            <li><a href="#">休闲零食</a></li>
+            <li><a href="#">粮食干货</a></li>
+            <li><a href="#">国产名酒</a></li>
+            <li><a href="#">牛奶乳品</a></li>
+            <li><a href="#">保健滋补</a></li>
+            <li class="br_none"><a href="#">饼干糕点</a></li>
+            <li class="br_none"><a href="#">休闲零食</a></li>
+        </ul>
+        <img src="images/img8.jpg"/>
+    </div>
+    <div class="right">
+    	<div class="type"><a href="#">坚果</a><a href="#">燕麦</a><a href="#">果仁</a><a href="#">巧克力</a><a href="#" class="jianju2">更多&gt;</a>       </div>
+        <div class="clear"></div>
+        <div class="list_box">
+        	<div class="list_box_one">
+            	<h1 style="color:#cbc943">舌尖美味 至尊享受</h1>
+                <p >看的见的甜蜜 说不尽的好吃</p>
+                <span style="background:#cbc943;">感恩节甜蜜陪伴你的左右</span>
+            	<img src="images/img5.jpg"/>
+            </div>
+            <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+                        <div class="pro_box">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+
+            <div class="pro_box mr_right">
+        	<img src="images/img6.jpg"/>
+            	<div class="pro_text">
+            		<h1 class="pro_name">奶酪威化饼</h1>
+                	<p>Richeese 丽芝士 奈宝帝奶酪威化饼干 350g 罐装 印尼进口</p>
+               	    <div class="price">￥49.00</div>
+           	    </div>
+            </div>
+            <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+                     <div class="pro_box_sec">
+            	<div class="pro_text">
+                	<p>时时惠进口水果 墨西哥牛油果鳄 梨水果150g盒装</p>
+                    <div class="price">￥49.00</div>
+                    <div class="pro_img">
+                    	<img src="images/img7.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<!--楼层结束-->
+<div class="clear"></div>
+<!--底部开始-->
+<div class="footer" style="margin-top:30px;">
+	<div class="main">
+    	<div class="ft_logo">
+        	<img src="images/f_logo.png"/>
+        </div>
+   
+     <div class="ft_center">
+            	<ul>
+                	<li>
+                    	<a href="#"><h1>使用指南</h1></a>
+                        <a href="#"><p>流程说明</p></a>
+                        <a href="#"><p>支付方式</p></a>
+                        <a href="#"><p>注册登录</p></a>
+                    </li>
+                    <li>
+                    	<a href="#"><h1>售后服务</h1></a>
+                        <a href="#"><p>售后政策</p></a>
+                        <a href="#"><p>退换货原则</p></a>
+                        <a href="#"><p>售后流程</p></a>
+                    </li>
+                    <li>
+                    	<a href="#"><h1>联系我们</h1></a>
+                        <a href="#"><p>免责条款</p></a>
+                        <a href="#"><p>关于我们</p></a>
+                        <a href="#"><p>联系我们</p></a>
+                    </li>
+                </ul>
+            </div>
+    <div class="ft_right"><a href="#"><img src="images/erweima.png" /></a></div>
+     </div>
+    <div class="bottom">©2010-2015 www.XXX.com 福州广为网络科技有限公司版权所有 闽ICP备 09051658号  技术支持：广为网络</div>
+</div>
+<!--底部结束-->
+
+
 </html>

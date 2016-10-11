@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登陆</title>
+<script src="js/jquery-1.9.0.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background:#FFF">
+<!--头部开始-->
+<div class="header">
+	<div style="width:100%; background:#eeeeee; ">
+	<div class="header_first">
+    	<span><a href="index.html" class="jianju"> <img src="images/ico_home.png">首页</a></span>
+        <span class="fl_right "><a href="login.html">登陆</a>  |  <a href="signUp.html">注册</a><a href="personCenter.html" class="jianju">会员中心</a> <a href="orderManage.html" class="jianju">我的订单</a><a href="help.html" class="jianju">帮助中心</a></span>
+    </div>
+    </div>
+    <div class="header_second">
+    	<div class="logo"><img src="images/logo.png" /></div> 
+        <div class="search_box">
+        	<input type="text" name="search" />
+            <input name="搜索" type="button" value="&nbsp;" />
+            <div class="search_text"><a href="#">办公桌</a> <a href="#">笔记本</a> <a href="#">代购</a> <a href="#">代销</a></div>
+        </div>
+        <a href="shopCar.html"><div class="car_box"><img src="images/car.png" /> 我的购物车 <span>(0)</span></div></a>
+    </div>
+</div>
+<!--头部结束-->
+<div class="xian"></div>
+<!--登陆开始-->
+<div class="login_box" style="background:url(images/login_bg.png) no-repeat;">
+
+	<div class="login">
+    	<div class="login_main">
+        	<div class="title">
+            	<h1>会员登陆</h1>
+            	<span class="fl_right zhuce">
+                	没有账号？
+                    <span class="color_orange"><a href="#">点击注册</a></span>
+                </span>
+            </div>
+            
+		    <form action="index.html">
+            <input name="" type="text" value="" class="user_box" id="uname"/>
+            
+            <input name="" type="password" value="" class="pass_word" id="pwd"/>
+            <a href="changeLoginpassword.html"><p class="color_orange" style="margin-top:8px;">忘记密码？</p></a>
+            <input name="" value="登 陆" type="submit" class="login_bt" onclick="return checkuser()"/>
+            </form>
+        </div>
+    </div>
+</div>
+<!--登陆结束-->
+<div class="clear"></div>
+<div style="width:10px; height:25px;"></div>
+
+<!--底部开始-->
+<div class="login_footer">
+	<div class="main">
+    	<div class="login_logo">
+        	<img src="images/foot_logo.png"/>
+        </div>
+        <div class="ft_tel">
+        	全国免费咨询电话
+            <p>400-0000-888</p>
+        </div>
+        <div class="ft_center">
+            	<ul>
+                	<li><a href="#"><p>使用指南</p></a></li>
+                    <li><a href="#"><p>售后服务</p></a></li>
+                    <li><a href="#"><p>联系我们</p></a></li>
+                </ul>
+        </div>
+     </div>
+    <div class="bottom">©2010-2015 www.XXX.com 福州广为网络科技有限公司版权所有 闽ICP备 09051658号  技术支持：广为网络</div>
+</div>
+<!--底部结束-->
+
+
+
+</body>
+</html>
